@@ -12,10 +12,10 @@ class Pizza:
     # Método para realizar un pedido de pizza
     def hacer_pedido(self):
         # Solicitar al usuario los ingredientes y el tipo de masa
-        self.ingrediente_proteico = input("Ingrese el ingrediente proteico: ")
-        self.ingrediente_vegetal1 = input("Ingrese el primer ingrediente vegetal: ")
-        self.ingrediente_vegetal2 = input("Ingrese el segundo ingrediente vegetal: ")
-        self.tipo_masa = input("Ingrese el tipo de masa (tradicional/delgada): ")
+        self.ingrediente_proteico = input("Ingrese el ingrediente proteico: ").lower()
+        self.ingrediente_vegetal1 = input("Ingrese el primer ingrediente vegetal: ").lower()
+        self.ingrediente_vegetal2 = input("Ingrese el segundo ingrediente vegetal: ").lower()
+        self.tipo_masa = input("Ingrese el tipo de masa (tradicional/delgada): ").lower()
 
         # Validar si los ingredientes y el tipo de masa son válidos
         if (self.validar_elemento(self.ingrediente_proteico, self.ingredientes_carne) and
